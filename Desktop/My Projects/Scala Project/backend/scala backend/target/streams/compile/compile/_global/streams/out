@@ -1,0 +1,51 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:16:42: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.util.Try[List[Etudiants.Etudiant]][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[?][0m
+[0m[[0m[31merror[0m] [0m[0m        onComplete(etudiantService.filter(filiere, niveau, statut)) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:17:42: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.http.scaladsl.marshalling.ToResponseMarshallable[0m
+[0m[[0m[31merror[0m] [0m[0m          case Success(list) => complete(list)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:22:50: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.util.Try[Option[Etudiants.Etudiant]][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[?][0m
+[0m[[0m[31merror[0m] [0m[0m        onComplete(etudiantService.getByMatricule(matricule)) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:23:45: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Any[0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.http.scaladsl.marshalling.ToResponseMarshallable[0m
+[0m[[0m[31merror[0m] [0m[0m          case Success(Some(e)) => complete(e)[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:29:39: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.util.Try[Etudiants.Etudiant][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[?][0m
+[0m[[0m[31merror[0m] [0m[0m        onComplete(etudiantService.add(etudiant)) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:30:63: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (akka.http.scaladsl.model.StatusCodes.Success, Any)[0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.http.scaladsl.marshalling.ToResponseMarshallable[0m
+[0m[[0m[31merror[0m] [0m[0m          case Success(saved) => complete(StatusCodes.Created -> saved)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:37:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.util.Try[Int][0m
+[0m[[0m[31merror[0m] [0m[0m required: scala.concurrent.Future[?][0m
+[0m[[0m[31merror[0m] [0m[0m          onComplete(etudiantService.countActifs()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\api\EtudiantRoutes.scala:38:49: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : scala.collection.immutable.Map[String,Any][0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.http.scaladsl.marshalling.ToResponseMarshallable[0m
+[0m[[0m[31merror[0m] [0m[0m            case Success(actifs) => complete(Map("actifs" -> actifs))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\repository\EtudiantCsvRepository.scala:19:70: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.nio.charset.Charset[0m
+[0m[[0m[31merror[0m] [0m[0m required: com.github.tototoshi.csv.CSVFormat[0m
+[0m[[0m[31merror[0m] [0m[0m        val reader = CSVReader.open(csvPath.toFile)(StandardCharsets.UTF_8)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\HP\Desktop\My Projects\Scala Project\backend\scala backend\src\main\scala\repository\EtudiantCsvRepository.scala:55:68: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : java.nio.charset.Charset[0m
+[0m[[0m[31merror[0m] [0m[0m required: com.github.tototoshi.csv.CSVFormat[0m
+[0m[[0m[31merror[0m] [0m[0m      val writer = CSVWriter.open(csvPath.toFile)(StandardCharsets.UTF_8)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
